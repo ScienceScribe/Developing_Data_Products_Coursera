@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>World Landmass Area Guessing Game</title>
+	<meta name="description" content="World Landmass Area Guessing Game">
+	<meta name="author" content="">
+	<meta name="generator" content="slidify" />
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight/css/tomorrow.css" />    
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-regular'>
+     <article class="" id="slide-1" style="background:;">
+  <h3>World Landmass Area Guessing Game (WLAGG)</h3>
+  <h4>A project created for the Coursera Developing Data Products course.</h4>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Want to test your knowledge of geography?</h3>
+  <h4>Play WLAGG!</h4>
+
+<h4>This game offers you the opportunity to guess the area of 48 different world landmasses.</h4>
+
+</article>
+
+<article class="" id="slide-3" style="background:;">
+  <h3>WLAGG is a Shiny app powered by R!</h3>
+  <h4>Here&#39;s a peek at 5 of the landmasses that you&#39;ll get to experience (and the programming language behind the fun):</h4>
+
+<pre><code class="r">data(islands)
+random_indices &lt;- sample(1:48, 5, replace = FALSE)
+for (i in random_indices) {
+  cat(names(islands[i]), &quot;\n&quot;)
+}
+</code></pre>
+
+<pre><code>## Kyushu 
+## Ellesmere 
+## New Zealand (N) 
+## North America 
+## Timor
+</code></pre>
+
+<h4>Wow!</h4>
+
+</article>
+
+<article class="" id="slide-4" style="background:;">
+  <h3>WLAGG has a simple user interface.</h3>
+  <p><img src="./assets/img/app.png" /></p>
+
+<h4>It&#39;s easy to start playing right away.</h4>
+
+</article>
+
+<article class="" id="slide-5" style="background:;">
+  <h3>Thanks for your attention:)</h3>
+  <h4>You can play WLAGG at: <a href="https://sciencescribe.shinyapps.io/Shiny_app---DevDataProd">https://sciencescribe.shinyapps.io/Shiny_app---DevDataProd</a></h4>
+
+</article>
+
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
+	 
+	</html>
